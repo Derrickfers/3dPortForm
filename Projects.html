@@ -3,14 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Home Page</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+    <style>
+        html  {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: ghostwhite;
+        }
+    </style>
+    
 </head>
 <body>
-
-    <h1><u>Projects</u></h1>
-
-    <p>Projects created by me </p>
-    <p>this is  fernandes projects </p>
-    
+<!--our header-->
+    <header>
+        <div class="logo"> 
+          <a href="" target="_blank" title="home"> 
+          <img src="images/favicon.png" alt="logo image" width="50px" style="border-style: solid; border-radius: 15px; border-width: 5px; border-color: gray; padding: 1px 13px;">
+          </a> 
+        </div>
+    <nav>
+        <ul style="list-style: none; display:flex; gap: 10px;">
+          <li><a href="index.html" title="Home Page">Home</a></li>
+          <li><a href="Education.html" title="Education Details Of My Self">Education</a></li>
+          <li><a href="projects.html" title="My Projects">Projects</a></li>
+          <li><a href="contact_me_form.html" title="Contact Me To Hire">Contact Me</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+<!--our main section-->
+    <main>
+        <div class="main contant">
+            <h1>My Projects</h1>
+            <p>Here you will find all my projects in detail.</p>  
+            <a href="#All My Projects"><button>All My Projects</button></a> 
+        </div>
+        <div class="main image">
+            <figure>
+            <img src="images/Projet manager.png" style='border-radius: 100%;' alt="main profile image" width="290" height="auto,">
+            </figure>
+        </div>
+    </main>
+    <hr>
+<!--our sectiion-->
+<section class="projects section">
+    <h2 id="All My Projects">All My Projects</h2>
+    <div class="All My Projects">
+        <p>- Here you wll find all my projects.</p>
+    </div>
+</section>
+<!--projects showing section-->
+<section class="project-section">
+    <h3>3D Projects</h3> 
+    <div class="project-images" style="display: flex; flex-flow: row wrap;">
+        <figure>
+            <img src="images/massimo render 1.png" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/joystick.png" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/coolwater r2.png" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/bottle 3- edit 1.png" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/i_phone_15_pro_max_render_edit_2.png" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/interior house.jpg" alt="p1" width="250" height="auto">
+        </figure>
+        <figure>
+            <img src="images/lighthouse.jpg" alt="p1" width="250" height="auto">
+        </figure>
+    </div>
+</section>
+<section class="project-section">
+    <h3>Web Design Projects</h3> 
+    <div class="project-images">
+        <figure>
+            <img src="images/website.avif" alt="p1" width="250" height="auto">
+        </figure>
+    </div>
+</section>
+<hr>
+<!--this is footer-->
+<footer>
+    <p><strong>Copyright &copy;2025 All right reserved| This is made by Derrick Fernandes.</strong></p>
+</footer>
 </body>
 </html>
