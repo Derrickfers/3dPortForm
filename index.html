@@ -4,81 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Home Page</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<style>
-    body  {
-        background-color: #43464b;
-        color: white;
-    }
-
-
-
-    #heading  {
-      width: 200px;
-      background-color: #000000;
-      color: #ffffff;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      border-radius: 13px; 
-      padding: 9px;
-      margin: 15px;
-      box-shadow: 0px 0px 9px rgb(240, 240, 243);
-      text-align: center;
-      }
-
-
-      p  {
-        margin: 35px;
-        margin-left: 9px;
-        font-size: 25px;
-      }
-
-      #links  {
-        color: rgb(228, 167, 149);
-          
-      } 
-
-
-</style>    
-   
+    <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+    <style>
+        html  {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: gainsboro;
+        }
+    </style>
+    
 </head>
 <body>
-
-<header>
-<div id="heading">
-    <h1><u>Hello World</u></h1>
-</div>
-</header>
-
-<section>
-    <p>Hello world this is a portfolio page. Here you will get all the details about my self, like <strong>Education, Experience and Projects.</strong></p>
-</section>
-
+<!--our header-->
+    <header>
+        <div class="logo"> 
+          <a href="" target="_blank" title="home"> 
+          <img src="images/favicon.png" alt="logo image" width="50px" style="border-style: solid; border-radius: 15px; border-width: 5px; border-color: gray; padding: 1px 13px;">
+          </a> 
+        </div>
+    <nav>
+        <ul style="list-style: none; display:flex; gap: 10px;">
+          <li><a href="index.html" title="Home Page">Home</a></li>
+          <li><a href="Education.html" title="Education Details Of My Self">Education</a></li>
+          <li><a href="projects.html" title="My Projects">Projects</a></li>
+          <li><a href="contact_me_form.html" title="Contact Me To Hire">Contact Me</a></li>
+        </ul>
+    </nav>
+    </header>
     <hr>
-
-<section>
-    <ol>
-        <b><h2><li>Portfolio Details</li></h2></b>
-    </ol>
-
-<!--here link of my details are specified-->
-
-    <ul>    
-    <li><a href="Education.html" target="_blank"><div id= "links"><strong>Education</strong></div></a></li><br>
-    <li><a href="Experience.html" target="_blank"><div id= "links"><strong>Experience</strong></div></a></li><br>
-    <li><a href="Projects.html" target="_blank"><div id= "links"><strong>Projects</strong></div></a></li>
-    </ul> 
+<!--our main section-->
+    <main>
+        <div class="main contant">
+            <h1>Hi! I’m Derrick Fernandes</h1>
+            <p>Hello! I’m Derrick Fernandes, a passionate web designer and artist with a keen eye for creativity and innovation.</p>  
+            <a href="#About Me"><button>About Me</button></a>
+            <a href="#My Blog"><button>See My Blog</button></a>
+        </div>
+        <div class="main image">
+            <figure>
+            <img src="images/main profile image.png" style='border-radius: 100%;' alt="main profile image" width="290" height="auto,">
+            </figure>
+        </div>
+    </main>
+    <hr>
+<!--our sectiion-->
+<section class="about me section">
+    <h2 id="About Me">About Me</h2>
+    <div class="About Me">
+        <p>Hi! I’m Derrick Fernandes, an aspiring web designer and artist. In this portfolio I will showcase my skills and creativity.</p>
+        <p>I create all types of web pages and design it in any way possible according to your need.</p>
+        <h3><u>Approach to Web Design</u></h3>
+        <ul>
+            <li><strong>Custom & Responsive Designs –</strong> I create websites that look great on all devices.</li>
+            <li><strong>User-Friendly Interfaces –</strong> I focus on designs that are easy to navigate.</li>
+            <li><strong>Creative & Modern Styles –</strong> I blend aesthetics with usability for a unique look.</li>
+        </ul>
+        <p>Alongside web design, I also explore other forms of digital creativity, including logo design, product design, packaging design, interior house design, and 3D art. I’m excited to grow in this field and bring fresh ideas to life. Let’s collaborate and create something amazing!</p>
+    </div>
 </section>
+<hr>
+<!--my service section-->
+<section class="service section">
+    <h2>Service I Offer</h2>
+    <div class="service list" style="display: flex; flex-flow: row wrap; font-size: xx-small;">
+        <figure>
+            <img src="images/website.avif" alt="Web Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>Web Site Design</figcaption>
+        </figure>
 
+        <figure>
+            <img src="images/logo monkey.png" alt="Logo Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>Logo Design</figcaption>
+        </figure>
 
-   <hr>
+        <figure>
+            <img src="images/massimo render 1.png" alt="Packaging Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>Packaging Design</figcaption>
+        </figure>
 
-<section>
-    <ol start="2">
-        <b><h2><li>Images</li></h2></b>
-    </ol>
-    
-    <img src="images/massimo render 1.png" alt="massimo render 1" width="15%"> 
+        <figure>
+            <img src="images/joystick.png" alt="Product Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>Product Design</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/interior house.jpg" alt="Interior House Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>Interior House Design</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/lighthouse.jpg" alt="3D Art Image" width="80px" height="80px" style="object-fit: cover;">
+            <figcaption>3D Art</figcaption>
+        </figure>
+    </div>
 </section>
-
+<hr>
+<!--blog section-->
+<section class="blog-section">
+    <h2 id="My Blog">My Blog</h2>
+    <article>
+        <header>
+            <h2>This Is My Blog (Articles)</h2>
+        </header>
+        <p>Welcome to my blog, where I share insights, ideas, and experiences about web design, digital art, and creativity. Since I’m new to professional web design, this blog serves as a space to document my learning journey, explore new trends, and share tips that I discover along the way.</p>
+        <section>
+            <h3>What You’ll Find Here:</h3>
+            <ul>
+                <li><strong>My Learning Experience –</strong> Follow my progress as I develop my web design skills.</li>
+                <li><strong>Web Design Tips & Tricks –</strong> Simple techniques and best practices I come across.</li>
+                <li><strong>Creative Design Insights –</strong> Exploring colors, layouts, and UI/UX principles.</li>
+                <li><strong>Project Walkthroughs –</strong> A behind-the-scenes look at my design process.</li>
+                <li><strong>Inspiration & Ideas –</strong> Sharing creative concepts and design inspiration.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>My Interests & Skills</h3>
+            <h4>Hobbies</h4>
+            <p>Beyond web design and art, I love exploring different creative and digital fields. Some of my favorite activities include:</p>
+            <ul>
+                <li><strong>🎮 Playing Games –</strong> I enjoy gaming as a way to relax and get inspired by game design.</li>
+                <li><strong>💻 Using Computers –</strong> Experimenting with new software and tech keeps me engaged.</li>
+                <li><strong>📺 Watching TV –</strong> A mix of movies, series, and animations fuels my creativity.</li>
+                <li><strong>🎨 Web Design –</strong> Experimenting with layouts, colors, and user experience.</li>
+                <li><strong>✈️ Traveling –</strong> Exploring new places gives me fresh ideas for design.</li>
+                <li><strong>🎵 Music Production –</strong> I create and experiment with sounds using FL Studio.</li>
+                <li><strong>🎬 Video & Photo Editing –</strong> Enhancing visuals with editing techniques.</li>
+                <li><strong>🎨 3D Editing –</strong> Working with Blender and SketchUp to bring ideas to life.</li>
+            </ul>
+            <h4>Skills</h4>
+            <ul>
+                <li><strong>Photoshop –</strong> For image editing and graphic design.</li>
+                <li><strong>VS Code –</strong> For website coding and development.</li>
+                <li><strong>Blender –</strong> For 3D modeling and animations.</li>
+                <li><strong>MS Word, Excel, PowerPoint –</strong> For organizing and presenting ideas.</li>
+                <li><strong>SketchUp –</strong> For 3D design and architectural visualization.</li>
+                <li><strong>FL Studio –</strong> For music production and sound design.</li>
+                <li><strong>Paint & Lightroom –</strong> For digital drawing and photo enhancements.</li>
+            </ul>
+            <p>This mix of interests and skills allows me to approach design from multiple perspectives. I’m excited to keep improving and sharing my journey here on my blog!</p>
+        </section>
+        <p>I hope this blog not only helps me grow but also provides useful insights to fellow beginners and design enthusiasts. Stay tuned for new articles, and let’s learn together!</p>
+    </article>
+</section>
+<hr>
+<!--this is footer-->
+<footer>
+    <ul class="icons">			
+        <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="https://www.instagram.com/derrickfernandes015/?r=nametag" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+    <ul class="copyright"> 
+    <li><strong>Copyright &copy;2025 All right reserved| This is made by Derrick Fernandes.</strong></li>
+    </ul>
+</footer>
 </body>
 </html>
