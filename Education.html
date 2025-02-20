@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Home Page</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+    <style>
+        html  {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: beige;
+        }
+    </style>
+    
 </head>
 <body>
-
-    <h1><u>Education</u></h1>
-
-    <p>studied at </p>
-    
+<!--our header-->
+    <header>
+        <div class="logo"> 
+          <a href="" target="_blank" title="home"> 
+          <img src="images/favicon.png" alt="logo image" width="50px" style="border-style: solid; border-radius: 15px; border-width: 5px; border-color: gray; padding: 1px 13px;">
+          </a> 
+        </div>
+    <nav>
+        <ul style="list-style: none; display:flex; gap: 10px;">
+          <li><a href="index.html" title="Home Page">Home</a></li>
+          <li><a href="Education.html" title="Education Details Of My Self">Education</a></li>
+          <li><a href="projects.html" title="My Projects">Projects</a></li>
+          <li><a href="contact_me_form.html" title="Contact Me To Hire">Contact Me</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+<!--our main section-->
+    <main>
+        <div class="main contant">
+            <h1>Education Details</h1>
+            <p>Here you will find details about my education.</p>  
+            <a href="#More Education Details"><button>More Education Details</button></a> 
+        </div>
+        <div class="main image">
+            <figure>
+            <img src="images/study.webp" style='border-radius: 100%;' alt="book image" width="290" height="auto,">
+            </figure>
+        </div>
+    </main>
+    <hr>
+<!--our sectiion-->
+<section class="education details section">
+    <h2 id="More Education Details">More Education Details</h2>
+    <div class="More Education Details">
+        <h3>STUDIED AT:</h3>
+        <ul>
+        <li>St Thomas Boys High School, Aldona Goa.</li>
+        <li>St Thomas Higher secondary School, Aldona Goa.</li>
+        <li>Saraswat Vidyalaya's Sridora Caculo College of Commerce and Management studies Mapusa Goa.</li>
+        <li>B.com graduate.</li>
+        <li>Web Development Course.</li>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <li>3D Modeling and Animation Course.</li>
+        </ul>
+    </div>
+</section>
+<hr>
+<!--this is footer-->
+<footer>
+    <p><strong>Copyright &copy;2025 All right reserved| This is made by Derrick Fernandes.</strong></p>
+</footer>
 </body>
 </html>
