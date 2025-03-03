@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            width: 96%;
+            margin: auto; 
+            box-shadow: 0px 0px 13px 5px rgb(184, 184, 184);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+                        
+        }
+        th, td {
+            
+        }
+        .time_table {
+            margin: 15px;
+            margin-top: 5px;
+            overflow-x: auto;
+             
+        }
+        .time_table, h1 { 
+            padding: 5px;   
+            text-align: center;
+            margin: 25px;
+            margin-top: 19px;
+             
+             
+        }   
+        #time-table-span {
+            border: solid rgb(184, 184, 184);
+            padding: 13px;
+            box-shadow: 0px 0px 5px 2px rgb(184, 184, 184);
+        }
+        td {
+            text-align: center;
+            padding: 5px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+             
+        }
+        td:hover {
+            background-color: rgb(155, 155, 155);
+            color: white;
+
+        }
+        th {
+            background-image: linear-gradient(#04aa78,#03966a);
+            color: white;
+            padding: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-shadow: 0 0 2px grey; 
+            margin-bottom: 35px;
+        }
+          
+    </style>
+</head>
+<body>
+  <div class="time_table">
+    <h1><span id="time-table-span">My Time Table</span></h1> 
+    <table>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <!--This is 7 Am-->
+        <tr>
+            <td>7 AM<br>Wake Up</td>
+            <td>7 AM<br>Wake Up</td>
+            <td>7 AM<br>Wake Up</td>
+            <td>7 AM<br>Wake Up</td>
+            <td>7 AM<br>Wake Up</td>
+            <td>7 AM<br>Wake Up</td>
+            <td>6 AM<br>Wake Up</td>
+        </tr>
+        <!-- This is at 7.10 AM   -->
+        <tr>
+            <td>7.10 AM<br>Cooking</td>
+            <td>7.10 AM<br>Cooking</td>
+            <td>7.10 AM<br>Cooking</td>
+            <td>7.10 AM<br>Cooking</td>
+            <td>7.10 AM<br>Cooking</td>
+            <td>7.10 AM<br>Cooking</td>
+            <td>6.30 AM<br>Sunday Mass</td>
+        </tr>
+        <!-- This is 7.30 AM -->
+        <tr>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Breakfast</td>
+            <td>7.30 AM<br>Cooking</td>
+        </tr>
+        <!-- This is 8.00 AM -->
+        <tr>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Work Time</td>
+            <td>8.00 AM<br>Breakfast</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8.30 AM<br>Work Time</td>
+        </tr>
+        <!-- This is 11.15 AM -->
+        <tr>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+            <td>11.15 AM<br>Eatting/Rest Break</td>
+        </tr>
+        <!-- This is 11.30 AM -->
+        <tr>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+            <td>11.30 AM<br>Work Time</td>
+        </tr>
+        <!-- This is 12.30 PM -->
+        <tr>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Exercise</td>
+            <td>12.30 PM<br>Work Time</td>
+        </tr>
+        <!-- This is 1.30 PM -->
+        <tr>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+            <td>1.30 PM<br>Lunch Break</td>
+        </tr>
+         <!-- This is 2.30 PM -->
+         <tr>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Work Time</td>
+            <td>2.30 PM<br>Sleep Break</td>
+        </tr>   
+             <!-- This is 4.30 PM -->
+         <tr>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+            <td>4.30 PM<br>Eatting/Rest Break</td>
+        </tr> 
+        <!-- This is 4.45 PM -->
+        <tr>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+            <td>4.45 PM<br>Work Time</td>
+        </tr> 
+        <!-- This is 7.00 PM -->
+        <tr>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+            <td>7.00 PM<br>Tea Break</td>
+        </tr>
+        <!-- This is 7.30 PM -->
+        <tr>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+            <td>7.30 PM<br>Work Time</td>
+        </tr>
+        <!-- This is 10.00 PM -->
+        <tr> 
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+            <td>10.00 PM<br>Dinner</td>
+        </tr>
+        <!-- This is 11.00PM -->
+        <tr> 
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+            <td>11.00 PM<br>Bedtime</td>
+        </tr>
+    </table>
+     
+
+
+  </div>
+
+</body>
+</html>
