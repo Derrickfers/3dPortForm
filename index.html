@@ -6,101 +6,388 @@
     <title>Portfolio Home Page</title>
     <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
     <style>
-        html  {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-image: linear-gradient(90deg, cornflowerblue, lightskyblue);
-            color: navy;
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "urbanist", sans-serif;
         }
-        .header_part{
-             
-            background-image: linear-gradient(-90deg, dodgerblue, aquamarine);
-            padding: 15px;
-             
+        
+        .container {
+            max-width: 110rem;
+            margin: 0 auto;
+            padding: 7rem 2.4rem;
         }
-        .logo a img {
+
+        html {
+            font-size: 62.5%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p, li, a {
+    font-family: "urbanist", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--para-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --main-color: #b1465a;
+    --supporting-color: #ffe6ea;
+    --font-color: grey;
+    --bg-color: white;
+    --heading-color: #fc8fa3;
+    --h-color: rgba(0, 0, 0, 0.815);
+    --white-color: white;
+    --para-color: grey;
+    --bnt-hover-bg-color: #fc6682;
+    --btn-box-shadow: 0 0 9px 1px gray ; 
+    --background-color: #faafbd;
+}
+
+.header-part {
+    box-shadow: 0 0 5px 2px gray;
+}
+
+.header-part .logo {
+    display: inline-block;
+    width: 50%;
+
+    & img {
+        border: solid #ffb3c1;
+    }
+ 
+}
+
+.header-part .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.header-part .navbar ul {
+    display: flex;
+    gap: 15px;
+
+    & li a {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    }
+
+    & li a:hover {
+        color: var(--bnt-hover-bg-color);
+
+    }
+}
+
+.main-part .main-contant {
+    & h1 {
+        font-size: 32px;
+        color: var(--heading-color);
+    }
+    
+    & p {
+        font-size: 18px;
+        margin: 15px 0 20px 0;
+    } 
+
+    & a {
+        display: inline-block;
+        padding: 9px 13px;
+        text-transform: uppercase;
+        font-size: 18px;
+        background-color: var(--heading-color);
+        border-radius: 5px;
+        margin-right: 15px;
+        color: var(--white-color);
+        margin-top: 15px;
+
+    }
+
+    & a:hover {
+        background-color: var(--bnt-hover-bg-color);
+    }
+}  
+
+.main-part .main-image img { 
+    width: 90%;
+    height: auto;
+    box-shadow: var(--btn-box-shadow);
+     
+    
+}
+
+.main-part .container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 45px;
+}
+
+.service-section .service-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+    align-items: center;
+
+    & figure {
+    padding: 15px;
+     }
+
+     & figure figcaption {
+        padding: 10px 0;
+        font-size: 13px;
+     }
+
+     & figure img {
+        border-radius: 50%;
+     }
+
+      
+
+     & figure:hover {
+        box-shadow: var(--btn-box-shadow);
+        cursor: pointer;
+     } 
+}
+
+.service-section h2 {
+    margin-bottom: 35px;
+    font-size: 22px;
+}
+
+.about-me-section {
+    & .About-Me {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    & h3 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+}
+
+.blog-section {
+    & .My-Blog {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    & h2 {
+        font-size: 18px;
+
+    }
+    & h3 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    & h4 {
+        font-size: 18px;
+        margin-top: 15px;
+         
+    }
+
+    & li {
+        font-size: 18px;
+    }
+
+
+
+}
+  
+footer {
+    background-color: var(--main-color);
+
+    & li a {
+        color: var(--white-color);
+    }
+
+    & li {
+        color: var(--white-color);
+    }
+       
+}
+
+
+
+
+
+/* reponsive */
+@media (max-width: 1600px){
+    .container {
+            max-width: 122rem;
+            margin: 0 auto;
+            padding: 7rem 2.4rem;
+    }
+}
+
+ 
+
+
+
+
+
+@media (max-width: 1366px){
+    .container {
+            max-width: 110rem;
+            margin: 0 auto;
+            padding: 7rem 2.4rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-part .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        & .navbar ul {
             display: flex;
-            justify-content: flex-start;
-             
+            flex-direction: column;
+        align-items: start;
         }
-        .main_part  { 
-            color: navy;
-            font-weight: bold;
-            
-            background-image: linear-gradient(-90deg, dodgerblue, aquamarine);
-              
-            text-align: center;
-            font-size: large;
+
+        .logo {
+            align-items: start;
         }
-        .main_contant a button  {
-            background-color: blue;
-            padding: 20px 45px;
-            margin: 6px; 
-            color: aliceblue;
-            font-size: large;
-            font-weight: bold;
+    }
+
+    .service-section .service-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+    align-items: center;
+    }
+
+    .main-part .container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 45px;
+    }
+}
 
 
-        }  
-        .unorder  {
-            list-style: none;
-            display:flex;
-            justify-content: flex-end;
-            align-items: center;
-            flex-wrap: wrap; 
-            align-content: center; 
-            gap: 10px; 
-        }  
-        .unorder li {
-            color: white;
-            background-color: blue;
-            padding: 15px;
-             
-        } 
-        .unorder a {
-            color: white;
-            font-weight: bold;
-        } 
+@media (max-width: 480px) {
+    html {
+        font-size: 55%; /* Scale text for small screens */
+    }
+    .header-part .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        & .navbar ul {
+            display: flex;
+            flex-direction: column;
+        align-items: start;
+        }
+
+        .logo {
+            align-items: start;
+        }
+    }
+
+    .service-section .service-list {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 35px;
+    align-items: center;
+    }
+
+    .main-part .container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 45px;
+    }
+    
+}
+
+
+
+
+
+
+
+     
+ 
+
+         
+        
+          
     </style>
     
 </head>
 <body>
 <!--our header-->
-    <header class="header_part">
+    <header class="header-part">
+    <div class="container">
         <div class="logo"> 
           <a href="" target="_blank" title="home"> 
-          <img src="images/favicon.png" alt="logo image" width="50px" style="border-style: solid; border-radius: 15px; border-width: 5px; border-color: gray; padding: 1px 13px;">
+          <img src="images/favicon.png" alt="logo image" width="10%" height="auto" >
           </a> 
         </div>
-    <nav>
-        <ul class="unorder">
+    <nav class="navbar">
+        <ul>
           <li><a href="index.html" title="Home Page">Home</a></li>
           <li><a href="Education.html" title="Education Details Of My Self">Education</a></li>
           <li><a href="projects.html" title="My Projects">Projects</a></li>
-          <li><a href="time_table.html" title="time_table">Time Table</a></li>
-          <li><a href="contact_me_form.html" title="Contact Me To Hire">Contact Me</a></li>
+          <li><a href="time_table.html" title="time_table">TimeTable</a></li>
+          <li><a href="contact_me_form.html" title="Contact Me To Hire">Contact</a></li>
         </ul>
     </nav>
+    </div>
     </header>
-    <hr>
+    <!-- <hr> -->
 <!--our main section-->
-    <main class="main_part">
-        <div class="main_contant">
+    <main class="main-part">
+    <div class="container">
+        <div class="main-contant">
             <h1>Hi! I’m Derrick Fernandes</h1>
-            <p>Hello! I’m Derrick Fernandes, a passionate web designer and artist<br>with a keen eye for creativity and innovation.</p>  
-            <a href="#About Me"><button>About Me</button></a>
-            <a href="#My Blog"><button>See My Blog</button></a>
+            <p>Hello! I’m Derrick Fernandes, a passionate web designer and artist, with a keen eye for creativity and innovation.</p>  
+            <a href="#About-Me"> About Me </a>
+            <a href="#My-Blog"> See My Blog </a>
         </div>
-        <div class="main image">
+        <div class="main-image">
             <figure>
-            <img src="images/main profile image.png" style='border-radius: 100%;' alt="main profile image" width="290" height="auto,">
+            <img src="images/main profile image.png" style='border-radius: 50%;' alt="main profile image"  >
             </figure>
         </div>
+    </div>
     </main>
     <hr>
 <!--our sectiion-->
-<section class="about me section">
-    <h2 id="About Me">About Me</h2>
-    <div class="About Me">
+<section class="about-me-section">
+    <div class="container">
+    <div id="About-Me"></div>
+       
+    <h2 class="About-Me" >About Me</h2>
+    <div class="About-Me">
         <p>Hi! I’m Derrick Fernandes, an aspiring web designer and artist. In this portfolio I will showcase my skills and creativity.</p>
         <p>I create all types of web pages and design it in any way possible according to your need.</p>
         <h3><u>Approach to Web Design</u></h3>
@@ -111,47 +398,52 @@
         </ul>
         <p>Alongside web design, I also explore other forms of digital creativity, including logo design, product design, packaging design, interior house design, and 3D art. I’m excited to grow in this field and bring fresh ideas to life. Let’s collaborate and create something amazing!</p>
     </div>
+    </div>
 </section>
 <hr>
 <!--my service section-->
-<section class="service section">
+<section class="service-section">
+    <div class="container">
     <h2>Service I Offer</h2>
-    <div class="service list" style="display: flex; flex-flow: row wrap; font-size: xx-small;">
+    <div class="service-list" >
         <figure>
-            <img src="images/website.avif" alt="Web Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/website.avif" alt="Web Design Image" width="80px" height="80px" >
             <figcaption>Web Site Design</figcaption>
         </figure>
 
         <figure>
-            <img src="images/logo monkey.png" alt="Logo Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/logo monkey.png" alt="Logo Design Image" width="80px" height="80px"  >
             <figcaption>Logo Design</figcaption>
         </figure>
 
         <figure>
-            <img src="images/massimo render 1.png" alt="Packaging Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/massimo render 1.png" alt="Packaging Design Image" width="80px" height="80px"  >
             <figcaption>Packaging Design</figcaption>
         </figure>
 
         <figure>
-            <img src="images/joystick.png" alt="Product Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/joystick.png" alt="Product Design Image" width="80px" height="80px"  >
             <figcaption>Product Design</figcaption>
         </figure>
         
         <figure>
-            <img src="images/interior house.jpg" alt="Interior House Design Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/interior house.jpg" alt="Interior House Design Image" width="80px" height="80px"  >
             <figcaption>Interior House Design</figcaption>
         </figure>
 
         <figure>
-            <img src="images/lighthouse.jpg" alt="3D Art Image" width="80px" height="80px" style="object-fit: cover;">
+            <img src="images/lighthouse.jpg" alt="3D Art Image" width="80px" height="80px"  >
             <figcaption>3D Art</figcaption>
         </figure>
     </div>
+</div>
 </section>
 <hr>
 <!--blog section-->
 <section class="blog-section">
-    <h2 id="My Blog">My Blog</h2>
+    <div class="container">
+        <div id="My-Blog"></div> 
+    <h2 class="My-Blog">My Blog</h2>
     <article>
         <header>
             <h2>This Is My Blog (Articles)</h2>
@@ -195,17 +487,20 @@
         </section>
         <p>I hope this blog not only helps me grow but also provides useful insights to fellow beginners and design enthusiasts. Stay tuned for new articles, and let’s learn together!</p>
     </article>
+</div>
 </section>
 <hr>
 <!--this is footer-->
 <footer>
+<div class="container">
     <ul class="icons">			
         <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
         <li><a href="https://www.instagram.com/derrickfernandes015/?r=nametag" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
     </ul>
-    <ul class="copyright"> 
+    <ul> 
     <li><strong>Copyright &copy;2025 All right reserved| This is made by Derrick Fernandes.</strong></li>
     </ul>
+</div>
 </footer>
 </body>
 </html>
